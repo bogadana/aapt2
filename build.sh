@@ -74,7 +74,7 @@ buildAapt2() {
   git apply ../patches/*.patch || exit 1
 
   mkdir -p "dist"
-  for arch in "arm64-v8a" "armeabi-v7a" "x86"; do
+  for arch in "x86-64"; do
       compileAapt2 $arch
   done
 }
